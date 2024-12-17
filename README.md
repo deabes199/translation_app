@@ -11,7 +11,7 @@ A mobile application that allows users to translate text between different langu
 - **User-friendly interface**: Simple and intuitive design for easy navigation.
 - **Dio Package**: for handling HTTP requests to fetch language data and translation results.
 - **Bloc/Cubit**: For state management, we use the BLoC (Business Logic Component) pattern with Cubit.
-- **JSON: Language data is stored and loaded from JSON files
+- **JSON**: Language data is stored and loaded from JSON files
 
 
 
