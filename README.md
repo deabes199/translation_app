@@ -4,9 +4,9 @@ A mobile application that allows users to translate text between different langu
 
 
 # Key Features:
-**Clean Architecture for clean and maintainable code structure.**
-**Multi-language support**: Translate between a wide range of languages.
-### Language Search: Easily find and select languages for translation.
+- **Clean Architecture for clean and maintainable code structure.**
+- **Multi-language support**: Translate between a wide range of languages.
+- **Language Search**: Easily find and select languages for translation.
 ### Real-time translation: Translate text instantly as you type.
 ### User-friendly interface: Simple and intuitive design for easy navigation.
 
