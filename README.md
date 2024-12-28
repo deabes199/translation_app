@@ -1,6 +1,6 @@
 # translation_app
 
-A mobile application that allows users to translate text between different languages. The app supports multiple languages and provides a seamless translation experience using various language models and The app is built using Flutter for cross-platform development.
+A mobile application that allows users to translate text  in realtime between different languages. The app supports multiple languages and provides a seamless translation experience using various language models and The app is built using Flutter for cross-platform development.
 
 
 <<<<<<< HEAD
