@@ -39,8 +39,12 @@ class InputTextTranslate extends StatelessWidget {
                   controller: context.read<HomeCubit>().textController,
                   maxLines: 5,
                   minLines: 1,
-                  onSubmitted: (value) {
-                    BlocProvider.of<HomeCubit>(context).translate();
+                  onChanged: (value) {
+                    if(value.trim().isNotEmpty){
+                       BlocProvider.of<HomeCubit>(context).translate();
+
+                    }
+                   
                   },
                   decoration:const InputDecoration(
                       hintText: 'Enter text',

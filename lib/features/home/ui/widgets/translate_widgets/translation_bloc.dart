@@ -14,14 +14,13 @@ class TranslationBloc extends StatelessWidget {
        return ResultTranslation(
           result: state.translationModel.translation,
         );
-      } else if (state is HomeLoadingState) {
-      return  CircularProgressIndicator();
-      } else if (state is HomeFaliureState) {
+      } 
+       else if (state is HomeFaliureState) {
        return Center(
           child: Text(state.message),
         );
       } else {
-      return  Container();
+      return const SizedBox.shrink();
       }
     });
   }

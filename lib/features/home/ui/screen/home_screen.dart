@@ -3,12 +3,19 @@ import 'package:google_translation_app/core/helper/colors.dart';
 import 'package:google_translation_app/core/helper/spacing.dart';
 import 'package:google_translation_app/features/home/ui/widgets/translate_widgets/choose_lang_button.dart';
 import 'package:google_translation_app/features/home/ui/widgets/translate_widgets/input_text_translate.dart';
-import 'package:google_translation_app/features/home/ui/widgets/translate_widgets/translate_button.dart';
 import 'package:google_translation_app/features/home/ui/widgets/translate_widgets/translation_bloc.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+
+  @override
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,11 +38,10 @@ class HomeScreen extends StatelessWidget {
                 verticalSpace(10),
                 const ChooseLangButton(),
                 verticalSpace(16),
-                InputTextTranslate(),
-                verticalSpace(20),
-              const  TranslateButton(),
+              const  InputTextTranslate(),
                 verticalSpace(20),
                const TranslationBloc()
+            
               ],
             ),
           ),
@@ -44,4 +50,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:google_translation_app/features/home/data/models/langs_model.dart';
@@ -15,6 +17,8 @@ class HomeCubit extends Cubit<HomeState> {
   LangsModel toLangs = LangsModel(name: 'Arabic', code: 'ar');
   List<LangsModel> languages = [];
   List<LangsModel> searchedLanguages = [];
+
+
   Future<void> translate() async {
     final response = await homeRepo.translate(
         toLangs.code, fromLngs.code, textController.text);
@@ -26,7 +30,6 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   loadLanguages() async {
-  
     try {
       final response = await homeRepo.loadLang();
       if (response.isEmpty) {

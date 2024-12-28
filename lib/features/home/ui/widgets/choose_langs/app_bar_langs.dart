@@ -4,7 +4,7 @@ import 'package:google_translation_app/core/helper/colors.dart';
 AppBar appBarLangs() {
   return AppBar(
     backgroundColor: primaryColor,
-    title: Text(
+    title:const Text(
       'Select Language',
       style: TextStyle(
           color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),

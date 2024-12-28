@@ -24,7 +24,7 @@ class ResultTranslation extends StatelessWidget {
           Expanded(
             child: Text(
               result,
-              style: TextStyle(
+              style:const TextStyle(
                   color: Colors.black,
                   fontSize: 16,
                   fontWeight: FontWeight.bold),
@@ -34,7 +34,7 @@ class ResultTranslation extends StatelessWidget {
             onPressed: () {
               Clipboard.setData(ClipboardData(text: result));
             },
-            icon: Icon(
+            icon:const Icon(
               Icons.copy,
               color: primaryColor,
             ),
