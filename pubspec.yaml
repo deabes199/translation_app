@@ -36,18 +36,19 @@ dependencies:
   flutter_bloc: ^8.1.6
   flutter_staggered_animations: ^1.1.1
   get_it: ^8.0.3
+  shared_preferences: ^2.3.5
 
 dev_dependencies:
-  flutter_lints: ^4.0.0
   flutter_launcher_icons: "^0.14.2"
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/images/language-translator-internet-png.webp"
-  min_sdk_android: 21 
-  adaptive_icon_background: "#ffffff"  
+  min_sdk_android: 21
+  adaptive_icon_background: "#ffffff"
   adaptive_icon_foreground: "assets/images/language-translator-internet-png.webp"
 
 # For information on the generic Dart part of this file, see the

@@ -8,12 +8,11 @@ import 'package:google_translation_app/features/home/logic/cubit/home_cubit.dart
 class InputTextTranslate extends StatelessWidget {
   const InputTextTranslate({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-      const  Align(
+        const Align(
           alignment: Alignment.centerLeft,
           child: Text(
             'Enter text to translate:',
@@ -30,23 +29,22 @@ class InputTextTranslate extends StatelessWidget {
                 BoxShadow(
                     color: Colors.grey.withOpacity(0.2),
                     blurRadius: 15,
-                    offset:const Offset(0, 8))
+                    offset: const Offset(0, 8))
               ]),
           child: Row(
             children: [
               Expanded(
                 child: TextField(
+                  style: TextStyle(color: Colors.black),
                   controller: context.read<HomeCubit>().textController,
                   maxLines: 5,
                   minLines: 1,
                   onChanged: (value) {
-                    if(value.trim().isNotEmpty){
-                       BlocProvider.of<HomeCubit>(context).translate();
-
+                    if (value.trim().isNotEmpty) {
+                      BlocProvider.of<HomeCubit>(context).translate();
                     }
-                   
                   },
-                  decoration:const InputDecoration(
+                  decoration: const InputDecoration(
                       hintText: 'Enter text',
                       hintStyle: TextStyle(color: Colors.black, fontSize: 16),
                       border: InputBorder.none),
@@ -62,7 +60,7 @@ class InputTextTranslate extends StatelessWidget {
                           clipboardData.text!;
                     }
                   },
-                  icon:const Icon(
+                  icon: const Icon(
                     Icons.paste,
                     color: primaryColor,
                   ))
